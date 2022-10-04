@@ -25,12 +25,17 @@ function Navbar() {
         gap="1rem"
         py="1rem"
         color="#202020"
-        //backdropFilter='blur(10px)'
+        backdropFilter="blur(10px)"
       >
         <Flex gap="1rem">
           <NavItem path="inicio" name="Inicio" setNav={setNav} nav={nav} />
           <NavItem path="about" name="Acerca" setNav={setNav} nav={nav} />
-          <NavItem path="proyectos" name="Proyectos" setNav={setNav} nav={nav} />
+          <NavItem
+            path="proyectos"
+            name="Proyectos"
+            setNav={setNav}
+            nav={nav}
+          />
           <NavItem path="contact" name="Contacto" setNav={setNav} nav={nav} />
         </Flex>
       </Flex>

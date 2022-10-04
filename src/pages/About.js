@@ -34,7 +34,7 @@ function About() {
         w="100vw"
         minH="100vh"
         id="about"
-        bg={theme.colors.background}
+        bg="rgba(255,255,255,0.8)"
         position="relative"
       >
         <Image
@@ -53,7 +53,6 @@ function About() {
           backdropFilter="blur(1px)"
           position="relative"
           zIndex="10"
-          bg="rgba(255,255,255,0.8)"
         >
           <Flex h="100%" flexWrap="wrap" justifyContent="center" gap="2rem">
             <Grid
