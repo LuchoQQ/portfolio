@@ -7,12 +7,15 @@ import {
   Icon,
   Image,
   keyframes,
+  Link,
   shouldForwardProp,
   Text,
   useTheme,
 } from "@chakra-ui/react";
 import React from "react";
 import { isValidMotionProp, motion } from "framer-motion";
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import IconLink from "../components/IconLink";
 function Hero() {
   const theme = useTheme();
 
@@ -135,7 +138,7 @@ function Hero() {
           }}
           position="absolute"
           top="70vh"
-          left="20vw"
+          left="0vw"
         >
           <Image
             src="https://res.cloudinary.com/diylksocz/image/upload/v1664761094/7b3206253b507c5237e8e92c7e1fa19f__1_-removebg-preview_ke21wk.png"
@@ -170,7 +173,7 @@ function Hero() {
             flexDir={["column", "column", "row", "row", "row"]}
           >
             <Box>
-              <Grid flexWrap="wrap" textAlign="center">
+              <Grid flexWrap="wrap" textAlign="center" gap='1rem'>
                 <Text
                   fontSize="6xl"
                   fontFamily={theme.fonts.secondary}
@@ -187,6 +190,21 @@ function Hero() {
                   </span>
                   , desarrollador Web Fullstack
                 </Text>
+                <Text w='400px' fontFamily={theme.fonts.primary} fontSize='sm'>Muchas gracias por visitar mi portfolio, en este sitio podrás ver algunos de los proyectos en los que hé trabajado, sobre mí y como contactarme.</Text>
+                <Flex justifyContent="center" mt="1rem" gap="1rem">
+                  <IconLink
+                    icon={AiFillGithub}
+                    path="http://www.github.com/luchoqq"
+                  />
+                  <IconLink
+                    icon={AiFillLinkedin}
+                    path="http://www.linkedin.com/in/luchoqq"
+                  />
+                  <IconLink
+                    icon={AiFillMail}
+                    path="mailto:luchoqq25@gmail.com"
+                  />
+                </Flex>
               </Grid>
             </Box>
             <Flex w="50%" justifyContent="center" alignContent="center">

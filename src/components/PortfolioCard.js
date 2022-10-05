@@ -89,15 +89,17 @@ function PortfolioCard({
           </ModalFooter>
         </ModalContent>
       </Modal>
+
       <Grid
+        minW="250px"
         maxW="20vw"
         justifySelf="center"
         position="relative"
         boxShadow="1px 1px 5px 5px #dedede"
       >
         <Flex gap="1rem" bg="#fff" flexDir="column">
-          <Image src={src} w={["320px", "300px"]} />
-          <Grid p="1rem" gap="1rem">
+          <Image src={src} w="100%" />
+          <Grid gap="1rem">
             <Box>
               <Text
                 fontFamily={theme.fonts.primary}

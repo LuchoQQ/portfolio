@@ -42,6 +42,7 @@ function Contact() {
         }
       })
       .catch((res) => console.log(res));
+      setButton(true)
   };
 
   const theme = useTheme();
@@ -158,7 +159,6 @@ function Contact() {
                 m="1rem"
                 disabled={button}
                 colorScheme="gray"
-                onClick={() => setButton(true)}
               >
                 Enviar
               </Button>
