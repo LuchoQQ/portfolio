@@ -16,9 +16,10 @@ function NavItem({ path, name, nav, setNav }) {
           textDecoration: "none",
         }}
         onSetActive={() => setNav(path)}
+        alignSelf='center'
       >
         <Text
-          fontSize="lg"
+          fontSize={["2xl", "lg", "lg", "lg", "lg"]}
           fontFamily={theme.fonts.primary}
           position="relative"
           transition="all .2s ease"

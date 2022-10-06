@@ -16,10 +16,13 @@ function Portfolio() {
         >
           Mis Proyectos
         </Text>
-        <Flex flexWrap="wrap" gap="2rem" justifyContent="center" mb='5vh' mt='5vh'>
-          <Grid>
-            
-          </Grid>
+        <Flex
+          flexWrap="wrap"
+          gap="2rem"
+          justifyContent="center"
+          mb="5vh"
+          mt="5vh"
+        >
           <PortfolioCard
             title="Ibiza"
             type="Landing Page"

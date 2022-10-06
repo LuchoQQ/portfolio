@@ -173,7 +173,7 @@ function Hero() {
             flexDir={["column", "column", "row", "row", "row"]}
           >
             <Box>
-              <Grid flexWrap="wrap" textAlign="center" gap='1rem'>
+              <Grid flexWrap="wrap" textAlign="center" gap="1rem">
                 <Text
                   fontSize="6xl"
                   fontFamily={theme.fonts.secondary}
@@ -190,21 +190,11 @@ function Hero() {
                   </span>
                   , desarrollador Web Fullstack
                 </Text>
-                <Text w='400px' fontFamily={theme.fonts.primary} fontSize='sm'>Muchas gracias por visitar mi portfolio, en este sitio podrás ver algunos de los proyectos en los que hé trabajado, sobre mí y como contactarme.</Text>
-                <Flex justifyContent="center" mt="1rem" gap="1rem">
-                  <IconLink
-                    icon={AiFillGithub}
-                    path="http://www.github.com/luchoqq"
-                  />
-                  <IconLink
-                    icon={AiFillLinkedin}
-                    path="http://www.linkedin.com/in/luchoqq"
-                  />
-                  <IconLink
-                    icon={AiFillMail}
-                    path="mailto:luchoqq25@gmail.com"
-                  />
-                </Flex>
+                <Text w="320px" fontFamily={theme.fonts.primary} fontSize="sm">
+                  Muchas gracias por visitar mi portfolio, en este sitio podrás
+                  ver algunos de los proyectos en los que hé trabajado, sobre mí
+                  y como contactarme.
+                </Text>
               </Grid>
             </Box>
             <Flex w="50%" justifyContent="center" alignContent="center">

@@ -4,19 +4,23 @@ import {
   useTheme,
   Link as ChakraLink,
   Box,
+  Icon,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
+import IconLink from "./IconLink";
 import NavItem from "./NavItem";
 
 function Navbar() {
   const theme = useTheme();
   const [nav, setNav] = useState("inicio");
+  const [mobile, setMobile] = useState(false);
   return (
     <>
       <Flex
         w="100%"
-        justifyContent="end"
+        justifyContent="center"
         position="fixed"
         zIndex="1000"
         px="4rem"
@@ -27,7 +31,52 @@ function Navbar() {
         color="#202020"
         backdropFilter="blur(10px)"
       >
-        <Flex gap="1rem">
+        <Flex flexDir="column" h='5vh' alignItems='center'>
+          <Icon
+            as={FaBars}
+            display={["block", "block", "block", "none", "none"]}
+            fontSize="4xl"
+            onClick={() => setMobile(!mobile)}
+            position="absolute"
+            zIndex="10"
+          />
+          <Flex
+            position="absolute"
+            top="0"
+            left={mobile ? "0" : "-120vw"}
+            transition="all 0.5s ease"
+            w="100vw"
+            h="100vh"
+            flexDir="column"
+            justifyContent="center"
+            gap="3rem"
+            bg="rgba(255,255,255,0.8)"
+            backdropFilter="blur(10px)"
+          >
+            <NavItem path="inicio" name="Inicio" setNav={setNav} nav={nav} />
+            <NavItem path="about" name="Acerca" setNav={setNav} nav={nav} />
+            <NavItem
+              path="proyectos"
+              name="Proyectos"
+              setNav={setNav}
+              nav={nav}
+            />
+            <NavItem path="contact" name="Contacto" setNav={setNav} nav={nav} />
+          </Flex>
+        </Flex>
+        <Flex
+          gap="1rem"
+          mr="auto"
+          display={["none", "none", "none", "flex", "flex"]}
+        >
+          <IconLink icon={AiFillGithub} path="http://www.github.com/luchoqq" />
+          <IconLink
+            icon={AiFillLinkedin}
+            path="http://www.linkedin.com/in/luchoqq"
+          />
+          <IconLink icon={AiFillMail} path="mailto:luchoqq25@gmail.com" />
+        </Flex>
+        <Flex gap="1rem" display={["none", "none", "none", "flex", "flex"]}>
           <NavItem path="inicio" name="Inicio" setNav={setNav} nav={nav} />
           <NavItem path="about" name="Acerca" setNav={setNav} nav={nav} />
           <NavItem
