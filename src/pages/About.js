@@ -53,39 +53,42 @@ function About() {
               gap=".5rem"
               justifyContent="center"
             >
-              <Grid>
-                <Text fontSize={["4xl", "4xl", "4xl", "4xl", "6xl"]} textAlign="center">
+              <Grid bg="rgba(255,255,255,0.5)" m="0 2rem 0 2rem">
+                <Text
+                  fontSize={["4xl", "4xl", "4xl", "4xl", "6xl"]}
+                  textAlign={['justify','start']}
+                >
                   Sobre mí
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "xl"]}
-                  w={["300px", "300px", "400px", "400px"]}
-                  textAlign="justify"
+                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  w={["100vw", "300px", "400px", "400px"]}
+                  textAlign={['justify','start']}
                 >
                   Tengo 21 años, soy de Corrientes Argentina
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "xl"]}
-                  w={["300px", "300px", "400px", "400px"]}
-                  textAlign="justify"
+                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  w={["100vw", "300px", "400px", "400px"]}
+                  textAlign={['justify','start']}
                 >
                   Hace más de un año que descubrí la programación, desde
                   entonces tanto programar como aprender son mi principal y
                   favorita actividad del día.
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "xl"]}
-                  w={["300px", "300px", "400px", "400px"]}
-                  textAlign="justify"
+                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  w={["100vw", "300px", "400px", "400px"]}
+                  textAlign={['justify','start']}
                 >
                   Tengo experiencia realizando E-Commerces, portales,
                   landing-pages, aplicaciones webs. Tanto del lado del Frontend
                   como del Backend.
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "xl"]}
-                  w={["300px", "300px", "400px", "400px"]}
-                  textAlign="justify"
+                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  w={["100vw", "300px", "400px", "400px"]}
+                  textAlign={['justify','start']}
                 >
                   La tecnología, la ciencia y los videojuegos me fascinan,
                   siempre estoy dispuesto a conversar sobre estos tópicos!.
@@ -98,7 +101,14 @@ function About() {
           </Flex>
         </Container>
       </Flex>
-      <Flex w="100vw" h="10vh" justifyContent='center' gap='1rem' flexWrap='wrap' mb='10vh'>
+      <Flex
+        w="100vw"
+        h="10vh"
+        justifyContent="center"
+        gap="1rem"
+        flexWrap="wrap"
+        mb="10vh"
+      >
         <TechsIcon src="https://res.cloudinary.com/diylksocz/image/upload/v1663856274/html_hjlzsl.png" />
         <TechsIcon src="https://res.cloudinary.com/diylksocz/image/upload/v1663856738/CSS-Logo_nugbhg.png" />
         <TechsIcon src="https://res.cloudinary.com/diylksocz/image/upload/v1663856817/JavaScript-logo_sxiss8.png" />

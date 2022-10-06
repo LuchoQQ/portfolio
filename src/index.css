@@ -1,4 +1,10 @@
-::-webkit-scrollbar {
+* ::-webkit-scrollbar {
   display: none;
   overflow: hidden;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-x: scroll;
+  -ms-overflow-style: none;
 }
+
+

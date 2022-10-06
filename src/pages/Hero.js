@@ -172,7 +172,7 @@ function Hero() {
             gap="6rem"
             flexDir={["column", "column", "row", "row", "row"]}
           >
-            <Box>
+            <Flex justifyContent="center">
               <Grid flexWrap="wrap" textAlign="center" gap="1rem">
                 <Text
                   fontSize="6xl"
@@ -181,7 +181,7 @@ function Hero() {
                 >
                   Hola!
                 </Text>
-                <Text fontSize="xl" fontFamily={theme.fonts.primary}>
+                <Text fontSize="2xl" fontFamily={theme.fonts.primary}>
                   Soy{" "}
                   <span
                     style={{ color: theme.colors.primary, fontWeight: "600" }}
@@ -190,13 +190,42 @@ function Hero() {
                   </span>
                   , desarrollador Web Fullstack
                 </Text>
-                <Text w="320px" fontFamily={theme.fonts.primary} fontSize="sm">
+                <Text
+                  fontFamily={theme.fonts.primary}
+                  fontSize={["sm", "sm", "sm", "sm", "md"]}
+                  textAlign="center"
+                  justifySelf="center"
+                  w="350px"
+                >
                   Muchas gracias por visitar mi portfolio, en este sitio podrás
                   ver algunos de los proyectos en los que hé trabajado, sobre mí
                   y como contactarme.
                 </Text>
+                <Flex
+                  justifyContent="center"
+                  alignContent="center"
+                  p="0.5rem 1rem 0.5rem 1rem"
+                  w="200px"
+                  justifySelf="center"
+                  rounded="20px"
+                  border="1px solid #202020"
+                  role="group"
+                  _hover={{
+                    bg: "#202020",
+                  }}
+                  transition="all 0.2s ease"
+                >
+                  <Link href="Luciano_Sanchez_Fullstack_CV.pdf" download style={{ textDecoration: 'none' }}>
+                    <Text
+                      fontFamily={theme.fonts.primary}
+                      _groupHover={{ color: "#fff" }}
+                    >
+                      Descargar CV
+                    </Text>
+                  </Link>
+                </Flex>
               </Grid>
-            </Box>
+            </Flex>
             <Flex w="50%" justifyContent="center" alignContent="center">
               <Box as={motion.div} animation={animation}>
                 <Image src="https://res.cloudinary.com/diylksocz/image/upload/v1664747598/pngtree-sunset-in-japan-png-image_4078813-removebg-preview_gi1blq.png" />

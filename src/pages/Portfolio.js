@@ -8,7 +8,7 @@ function Portfolio() {
     <>
       <Grid w="100%" minH="100vh" bg={theme.colors.background} id="proyectos">
         <Text
-          fontSize="3xl"
+          fontSize="5xl"
           textAlign="center"
           fontFamily={theme.fonts.primary}
           mt="10vh"
