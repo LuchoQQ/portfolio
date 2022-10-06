@@ -42,7 +42,7 @@ function Contact() {
         }
       })
       .catch((res) => console.log(res));
-      setButton(true)
+    setButton(true);
   };
 
   const theme = useTheme();
@@ -55,23 +55,20 @@ function Contact() {
         zIndex="10"
         justifyContent="center"
         alignContent="center"
-        bg="#fff"
         id="contact"
         autoFlow={["row", "row", "row", "column", "column"]}
-        boxShadow="10px 10px 10px 5px black"
-        py="4rem"
+        gap='5rem'
       >
-        <Flex gap="5rem" flexWrap="wrap" justifyContent="center">
+        
           <Flex
             minW={["90vw", "70vw", "40vw", "25vw", "25vw"]}
             flexDir="column"
             p="2rem"
             fontFamily={theme.fonts.primary}
             gap="3rem"
-            rounded="20px"
-            boxShadow="1px 1px 10px 1px #606060"
             justifyContent="center"
-            h="500px"
+            boxShadow="0px 0px 10px 5px rgba(0,0,0,0.2)"
+            rounded='15px'
           >
             <Text fontSize="3xl" fontFamily={theme.fonts.primary} mb="auto">
               Contactame
@@ -118,15 +115,14 @@ function Contact() {
             </Flex>
           </Flex>
           <Flex
-            h="500px"
             w={["90vw", "70vw", "40vw", "25vw", "25vw"]}
             maxH="auto"
             flexDir="column"
             p="2rem"
             fontFamily={theme.fonts.primary}
             gap="1rem"
-            rounded="20px"
-            boxShadow="1px 1px 10px 1px #606060"
+            boxShadow="0px 0px 10px 5px rgba(0,0,0,0.2)"
+            rounded='15px'
           >
             <Text
               fontSize={["2xl", "2xl", "2xl", "2xl", "2xl", "3xl"]}
@@ -163,7 +159,6 @@ function Contact() {
                 Enviar
               </Button>
             </form>
-          </Flex>
         </Flex>
       </Grid>
     </>
