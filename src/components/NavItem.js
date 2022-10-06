@@ -19,7 +19,7 @@ function NavItem({ path, name, nav, setNav }) {
         alignSelf='center'
       >
         <Text
-          fontSize={["2xl", "lg", "lg", "lg", "lg"]}
+          fontSize={["4xl", "lg", "lg", "lg", "lg"]}
           fontFamily={theme.fonts.primary}
           position="relative"
           transition="all .2s ease"
@@ -32,7 +32,7 @@ function NavItem({ path, name, nav, setNav }) {
             height: "3px",
             bg: theme.colors.primary,
             left: nav === path ? "0" : "50%",
-            top: "100%",
+            top: "95%",
           }}
         >
           {name}

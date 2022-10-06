@@ -58,6 +58,7 @@ function Contact() {
         id="contact"
         autoFlow={["row", "row", "row", "column", "column"]}
         gap='5rem'
+        p='5vh 0 5vh 0'
       >
         
           <Flex

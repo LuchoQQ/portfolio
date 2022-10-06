@@ -56,21 +56,21 @@ function About() {
               <Grid bg="rgba(255,255,255,0.5)" m="0 2rem 0 2rem">
                 <Text
                   fontSize={["4xl", "4xl", "4xl", "4xl", "6xl"]}
-                  textAlign={['justify','start']}
+                  textAlign={["justify", "start"]}
                 >
                   Sobre mí
                 </Text>
                 <Text
                   fontSize={["md", "md", "md", "md", "lg", "2xl"]}
-                  w={["100vw", "300px", "400px", "400px"]}
-                  textAlign={['justify','start']}
+                  w={["300px", "300px", "400px", "400px"]}
+                  textAlign={["justify", "start"]}
                 >
                   Tengo 21 años, soy de Corrientes Argentina
                 </Text>
                 <Text
                   fontSize={["md", "md", "md", "md", "lg", "2xl"]}
-                  w={["100vw", "300px", "400px", "400px"]}
-                  textAlign={['justify','start']}
+                  w={["300px", "300px", "400px", "400px"]}
+                  textAlign={["justify", "start"]}
                 >
                   Hace más de un año que descubrí la programación, desde
                   entonces tanto programar como aprender son mi principal y
@@ -78,8 +78,8 @@ function About() {
                 </Text>
                 <Text
                   fontSize={["md", "md", "md", "md", "lg", "2xl"]}
-                  w={["100vw", "300px", "400px", "400px"]}
-                  textAlign={['justify','start']}
+                  w={["300px", "300px", "400px", "400px"]}
+                  textAlign={["justify", "start"]}
                 >
                   Tengo experiencia realizando E-Commerces, portales,
                   landing-pages, aplicaciones webs. Tanto del lado del Frontend
@@ -87,8 +87,8 @@ function About() {
                 </Text>
                 <Text
                   fontSize={["md", "md", "md", "md", "lg", "2xl"]}
-                  w={["100vw", "300px", "400px", "400px"]}
-                  textAlign={['justify','start']}
+                  w={["300px", "300px", "400px", "400px"]}
+                  textAlign={["justify", "start"]}
                 >
                   La tecnología, la ciencia y los videojuegos me fascinan,
                   siempre estoy dispuesto a conversar sobre estos tópicos!.

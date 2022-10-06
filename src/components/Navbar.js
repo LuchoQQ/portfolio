@@ -29,21 +29,20 @@ function Navbar() {
         gap="1rem"
         py="1rem"
         color="#202020"
-        backdropFilter="blur(10px)"
       >
-        <Flex flexDir="column" h='5vh' alignItems='center'>
+        <Flex flexDir="column">
           <Icon
             as={FaBars}
             display={["block", "block", "block", "none", "none"]}
             fontSize="4xl"
             onClick={() => setMobile(!mobile)}
-            position="absolute"
             zIndex="10"
+            alignSelf="center"
           />
           <Flex
-            position="absolute"
+            /* position="absolute"
             top="0"
-            left={mobile ? "0" : "-120vw"}
+            left="0"
             transition="all 0.5s ease"
             w="100vw"
             h="100vh"
@@ -51,7 +50,18 @@ function Navbar() {
             justifyContent="center"
             gap="3rem"
             bg="rgba(255,255,255,0.8)"
-            backdropFilter="blur(10px)"
+            backdropFilter="blur(10px)" */
+            position='fixed'
+            top='0'
+            left={mobile ? '0' : '-110vw'}
+            display={["flex", "flex", "flex", "none", "none"]}
+            flexDir="column"
+            alignSelf="center"
+            justifyContent="center"
+            gap="3rem"
+            w="100vw"
+            h='100vh'
+            bg='rgba(255,255,255,0.8)'
           >
             <NavItem path="inicio" name="Inicio" setNav={setNav} nav={nav} />
             <NavItem path="about" name="Acerca" setNav={setNav} nav={nav} />

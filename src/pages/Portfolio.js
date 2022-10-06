@@ -22,6 +22,7 @@ function Portfolio() {
           justifyContent="center"
           mb="5vh"
           mt="5vh"
+          p='1rem'
         >
           <PortfolioCard
             title="Ibiza"

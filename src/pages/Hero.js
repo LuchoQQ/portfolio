@@ -195,7 +195,7 @@ function Hero() {
                   fontSize={["sm", "sm", "sm", "sm", "md"]}
                   textAlign="center"
                   justifySelf="center"
-                  w="350px"
+                  w="320px"
                 >
                   Muchas gracias por visitar mi portfolio, en este sitio podrás
                   ver algunos de los proyectos en los que hé trabajado, sobre mí
@@ -215,7 +215,11 @@ function Hero() {
                   }}
                   transition="all 0.2s ease"
                 >
-                  <Link href="Luciano_Sanchez_Fullstack_CV.pdf" download style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="Luciano_Sanchez_Fullstack_CV.pdf"
+                    download
+                    style={{ textDecoration: "none" }}
+                  >
                     <Text
                       fontFamily={theme.fonts.primary}
                       _groupHover={{ color: "#fff" }}
@@ -226,7 +230,12 @@ function Hero() {
                 </Flex>
               </Grid>
             </Flex>
-            <Flex w="50%" justifyContent="center" alignContent="center">
+            <Flex
+              w="50%"
+              justifyContent="center"
+              alignContent="center"
+              overflow="hidden"
+            >
               <Box as={motion.div} animation={animation}>
                 <Image src="https://res.cloudinary.com/diylksocz/image/upload/v1664747598/pngtree-sunset-in-japan-png-image_4078813-removebg-preview_gi1blq.png" />
               </Box>
