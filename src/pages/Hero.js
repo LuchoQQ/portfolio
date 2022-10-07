@@ -183,7 +183,7 @@ function Hero() {
                   >
                     Luciano Sánchez{" "}
                   </span>
-                  , desarrollador Web Fullstack
+                  desarrollador Web Fullstack
                 </Text>
                 <Text
                   fontFamily={theme.fonts.primary}
