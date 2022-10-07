@@ -1,10 +1,8 @@
 import {
   Box,
   chakra,
-  Container,
   Flex,
   Grid,
-  Icon,
   Image,
   keyframes,
   Link,
@@ -14,8 +12,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { isValidMotionProp, motion } from "framer-motion";
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
-import IconLink from "../components/IconLink";
 function Hero() {
   const theme = useTheme();
 
@@ -34,7 +30,6 @@ function Hero() {
   });
 
   const width = window.innerWidth;
-  console.log(width);
   return (
     <>
       <Flex

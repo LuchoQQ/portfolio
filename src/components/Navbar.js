@@ -29,8 +29,10 @@ function Navbar() {
         gap="1rem"
         py="1rem"
         color="#202020"
+        backdropFilter={['', '', '', 'blur(10px)', 'blur(10px)']}
+
       >
-        <Flex flexDir="column">
+        <Flex flexDir="column" >
           <Icon
             as={FaBars}
             display={["block", "block", "block", "none", "none"]}
@@ -78,6 +80,7 @@ function Navbar() {
           gap="1rem"
           mr="auto"
           display={["none", "none", "none", "flex", "flex"]}
+          
         >
           <IconLink icon={AiFillGithub} path="http://www.github.com/luchoqq" />
           <IconLink
