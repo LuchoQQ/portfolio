@@ -20,7 +20,7 @@ function NavItem({ path, name, nav, setNav }) {
       >
         <Text
           fontSize={["4xl", "lg", "lg", "lg", "lg"]}
-          fontFamily={theme.fonts.primary}
+          fontFamily={theme.fonts.tertiary}
           position="relative"
           transition="all .2s ease"
           color={nav === path ? theme.colors.primary : "#202020"}

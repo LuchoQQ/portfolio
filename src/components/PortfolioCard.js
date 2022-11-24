@@ -123,6 +123,7 @@ function PortfolioCard({
               fontFamily={theme.fonts.primary}
               color="#505050"
               fontSize="sm"
+              px='1rem'
             >
               {briefDescription}
             </Text>

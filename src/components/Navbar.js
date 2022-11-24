@@ -30,7 +30,6 @@ function Navbar() {
         py="1rem"
         color="#202020"
         backdropFilter={['', '', '', 'blur(10px)', 'blur(10px)']}
-
       >
         <Flex flexDir="column" >
           <Icon
@@ -59,7 +58,6 @@ function Navbar() {
             display={["flex", "flex", "flex", "none", "none"]}
             flexDir="column"
             alignSelf="center"
-            justifyContent="center"
             gap="3rem"
             w="100vw"
             h='100vh'
@@ -80,7 +78,6 @@ function Navbar() {
           gap="1rem"
           mr="auto"
           display={["none", "none", "none", "flex", "flex"]}
-          
         >
           <IconLink icon={AiFillGithub} path="http://www.github.com/luchoqq" />
           <IconLink
@@ -89,7 +86,7 @@ function Navbar() {
           />
           <IconLink icon={AiFillMail} path="mailto:luchoqq25@gmail.com" />
         </Flex>
-        <Flex gap="1rem" display={["none", "none", "none", "flex", "flex"]}>
+        <Flex gap="1rem" display={["none", "none", "none", "flex", "flex"]} mr='auto'>
           <NavItem path="inicio" name="Inicio" setNav={setNav} nav={nav} />
           <NavItem path="about" name="Acerca" setNav={setNav} nav={nav} />
           <NavItem

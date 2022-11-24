@@ -61,14 +61,14 @@ function About() {
                   Sobre mí
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  fontSize={["md", "md", "md", "md", "md", "2xl"]}
                   w={["300px", "300px", "400px", "400px"]}
                   textAlign={["justify", "start"]}
                 >
                   Tengo 21 años, soy de Corrientes Argentina
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  fontSize={["md", "md", "md", "md", "md", "2xl"]}
                   w={["300px", "300px", "400px", "400px"]}
                   textAlign={["justify", "start"]}
                 >
@@ -77,7 +77,7 @@ function About() {
                   favorita actividad del día.
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  fontSize={["md", "md", "md", "md", "md", "2xl"]}
                   w={["300px", "300px", "400px", "400px"]}
                   textAlign={["justify", "start"]}
                 >
@@ -86,7 +86,7 @@ function About() {
                   como del Backend.
                 </Text>
                 <Text
-                  fontSize={["md", "md", "md", "md", "lg", "2xl"]}
+                  fontSize={["md", "md", "md", "md", "md", "2xl"]}
                   w={["300px", "300px", "400px", "400px"]}
                   textAlign={["justify", "start"]}
                 >
@@ -96,7 +96,11 @@ function About() {
               </Grid>
             </Flex>
             <Grid alignSelf="center">
-              <Image src="https://res.cloudinary.com/diylksocz/image/upload/v1664819372/output-onlinegiftools_yuorhw.gif" />
+              <Image
+                w="350px"
+                position="relative"
+                src="https://res.cloudinary.com/diylksocz/image/upload/c_crop,w_338/v1664819372/output-onlinegiftools_yuorhw.gif"
+              />
             </Grid>
           </Flex>
         </Container>
