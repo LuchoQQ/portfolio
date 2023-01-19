@@ -154,6 +154,7 @@ function Hero() {
                     alignItems="center"
                     flexDir={["column", "column", "row", "row", "row"]}
                     gap="1rem"
+                    
                 >
                     <Grid flexWrap="wrap" textAlign="center" gap="1rem" w="45%">
                         <Text
