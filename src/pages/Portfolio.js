@@ -35,9 +35,18 @@ function Portfolio() {
                         briefDescription="Armoniface es una plataforma de cursos online dictados por dos especialistas en belleza facial"
                         description="Armoniface es un proyecto de dos dentistas especializadas en belleza facial, dentro de la páginas puedes ver los cursos disponibles y contactar para adquirirlos."
                         src="https://res.cloudinary.com/diylksocz/image/upload/v1674123544/Captura_de_pantalla_2023-01-19_071853_rcn9jf.png"
-                        stack="Next.js, ChakraUI, MongoDB, Mongoose"
+                        stack="Next.js, ChakraUI, MongoDB, Mongoose, Typescript"
                         github="https://github.com/LuchoQQ/armoniface"
                         web="https://armoniface.vercel.app"
+                    />
+                    <PortfolioCard
+                        title="Planeta Burger"
+                        type="e-Commerce"
+                        briefDescription="Planeta Burger es una tienda local de comida rapida"
+                        description="Planeta Burger es un sitio web donde estan listados las hamburguesas disponibles, puedes editar la orden, agregar y quitar opcionales, añadir comentarios. Luego de finalizar la orden será enviado por WhatsApp al contacto con el negocio, donde confirmaran el pedido."
+                        src="https://res.cloudinary.com/diylksocz/image/upload/v1677183802/Sin_t%C3%ADtulo_yuudyy.png"
+                        stack="Next.js, ChakraUI, Google Sheets, Typescript"
+                        github="https://github.com/axelromero99/planeta-burguers/"
                     />
                     <PortfolioCard
                         title="Lapstore"
